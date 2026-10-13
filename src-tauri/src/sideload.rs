@@ -65,7 +65,7 @@ pub async fn sideload(
         .install_app(
             &provider,
             app_path.into(),
-            false,
+            true,
             None::<fn(f32) -> std::future::Ready<()>>,
             Some(&device.pairing),
         )
